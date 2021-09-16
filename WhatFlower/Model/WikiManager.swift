@@ -18,7 +18,7 @@ struct WikiManager {
 
         let url = "\(baseURL)\(name)"
         if let urlString = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
-            getWikiInfo(url: urlString)
+            makeWikiRequest(url: urlString)
             print(urlString)
         }
         
@@ -49,7 +49,7 @@ struct WikiManager {
     }
 
     
-    func getWikiInfo(url: String) {
+    func makeWikiRequest(url: String) {
         print(" getWikiInfo is called")
         if let url = URL(string: url){
             print("  I am inside let url = URL(string: url)")

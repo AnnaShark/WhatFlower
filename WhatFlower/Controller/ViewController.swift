@@ -81,7 +81,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
 }
 
-//MARK: - WeatherManagerDelegate
+//MARK: - WikiManagerDelegate
 extension ViewController: WikiManagerDelegate {
     func didUpdateFlower(_ wikiManager: WikiManager, extract: String, pic: String){
         DispatchQueue.main.async {
